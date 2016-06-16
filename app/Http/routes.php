@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     $people = ['taylor', 'Matt', "Bill"];
+
+//     return view('welcome', compact('people'));
+// });
+
+Route::get('/', 'PagesController@home');
