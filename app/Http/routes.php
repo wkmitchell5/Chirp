@@ -13,3 +13,7 @@
 Route::get('/', 'PagesController@home');
 
 Route::get('about', 'PagesController@about');
+
+Route::get('players', 'PlayersController@index');
+
+Route::get('players/{id}', 'PlayersController@show');
