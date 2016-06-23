@@ -16,4 +16,4 @@ Route::get('about', 'PagesController@about');
 
 Route::get('players', 'PlayersController@index');
 
-Route::get('players/{id}', 'PlayersController@show');
+Route::get('players/{player}', 'PlayersController@show');

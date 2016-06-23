@@ -2,11 +2,21 @@
 
 @section('content')
 
-<h1>
+	<p1>
 	
-{{ $player->FirstName }}
+	{{ $player->FirstName }}
 
-</h1>
+	</p1>
+
+	<ol>
+
+		@foreach ($player->notes as $note)
+
+			<li>{{$note->body}}</li>
+
+		@endforeach
+
+	</ol>
 
 @stop
 
