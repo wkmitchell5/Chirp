@@ -2,14 +2,14 @@
 
 @section('content')
 
-<h1>All Players</h1>
+	<h1>All Players</h1>
 
-@foreach ($players as $player)
+	@foreach ($players as $player)
 
-<div>
-    {{$player->FirstName}} {{$player->LastName}}
-</div>
+		<div>
+		    <a href="/players/{{ $player->id }}">{{ $player->FirstName }}</a>
+		</div>
 
-@endforeach
+	@endforeach
 
 @stop
