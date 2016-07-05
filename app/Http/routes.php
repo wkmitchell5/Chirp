@@ -20,6 +20,6 @@ Route::get('players/{player}', 'PlayersController@show');
 
 Route::post('players/{player}/notes', 'NotesController@store');
 
-Route::get('/notes/{note}/edit', 'NotesController@edit');
+Route::get('notes/{note}/edit', 'NotesController@edit');
 
-Route::patch('notes/{note}');
+Route::patch('notes/{note}', 'NotesController@update');

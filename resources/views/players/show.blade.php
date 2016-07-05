@@ -12,7 +12,7 @@
 
 				@foreach ($player->notes as $note)
 
-					<li class="list-group-item">{{$note->body}}</li>
+					<li class="list-group-item clearfix">{{$note->body}} <a href="/notes/{{ $note->id }}/edit" class="btn btn-default" style="float: right";>Edit</a> </li>
 
 				@endforeach
 

@@ -10,4 +10,9 @@ class Player extends Model
    {
    return $this->hasMany(Note::class);
    }
+
+   public function users()
+    {
+    return $this->belongsTo(User::class);
+    }
 }

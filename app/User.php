@@ -6,6 +6,10 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
 {
+    public function players()
+       {
+            return $this->hasMany(Player::class);
+       }
     /**
      * The attributes that are mass assignable.
      *
